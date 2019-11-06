@@ -87,6 +87,7 @@ class Graph:
         stack = Stack()
         explored = set()
         stack.push(starting_vertex)
+        
         while stack.size():
             current = stack.pop()
             if current not in explored:
@@ -106,6 +107,7 @@ class Graph:
         stack = Stack()
         explored = set()
         stack.push(starting_vertex)
+
         def traverse(vertex):
             if vertex not in explored:
                 print(vertex)
@@ -169,6 +171,7 @@ class Graph:
         stack = Stack()
         explored = set()
         stack.push([starting_vertex])
+
         while stack.size():
             current = stack.pop()
             explored.add(current[-1])
@@ -248,7 +251,7 @@ if __name__ == '__main__':
         [1, 2, 4, 6]
     '''
     print(graph.bfs(1, 6))
-    
+
     '''
     Valid DFS paths:
         [1, 2, 4, 6]
